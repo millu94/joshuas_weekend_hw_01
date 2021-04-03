@@ -18,6 +18,15 @@ def add_or_remove_cash(pet_shop_info, cash_amount):
 def get_pets_sold(pet_shop_info):
     return pet_shop_info["admin"]["pets_sold"]
 
+#6 increase number of pets sold
+def increase_pets_sold(pet_shop_info, pets_sold):
+    pet_shop_info["admin"]["pets_sold"] += pets_sold
+
+#7 find the stock count
+def get_stock_count(pet_shop_info):
+    return len(pet_shop_info["pets"])
+
+
 
 
 
