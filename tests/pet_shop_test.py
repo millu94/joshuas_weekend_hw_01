@@ -74,12 +74,12 @@ class TestPetShop(unittest.TestCase):
             },
             "name": "Camelot of Pets"
         }
-
+#function 1
     def test_pet_shop_name(self):
         name = get_pet_shop_name(self.cc_pet_shop)
         self.assertEqual("Camelot of Pets", name)
 
-    @unittest.skip("delete this line to run the test")
+#function 2
     def test_total_cash(self):
         sum = get_total_cash(self.cc_pet_shop)
         self.assertEqual(1000, sum)
