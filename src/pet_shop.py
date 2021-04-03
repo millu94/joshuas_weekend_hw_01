@@ -14,7 +14,9 @@ def get_total_cash(pet_shop_info):
 def add_or_remove_cash(pet_shop_info, cash_amount):
     pet_shop_info["admin"]["total_cash"] = pet_shop_info["admin"]["total_cash"] + cash_amount
 
-
+#5 find how many pets have sold
+def get_pets_sold(pet_shop_info):
+    return pet_shop_info["admin"]["pets_sold"]
 
 
 
