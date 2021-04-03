@@ -39,6 +39,17 @@ def get_pets_by_breed(pet_shop_info, breed):
         x = x + 1
     return number_of_breeds
 
+#10 + #11
+def find_pet_by_name(pet_shop_info, name):
+    x = 0
+    while x < 6:    
+        if pet_shop_info["pets"][x]["name"] == name:
+            return pet_shop_info["pets"][x]["name"]
+        x = x + 1
+    return 0
+
+
+
         
 
     
