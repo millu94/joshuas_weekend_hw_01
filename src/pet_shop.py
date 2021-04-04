@@ -48,3 +48,32 @@ def find_pet_by_name(pet_shop_info, name):
         x = x + 1
     return None
 
+#12 remove pet by name
+# def remove_pet_by_name(pet_shop_info, name):
+#     #pdb.set_trace()
+#     for pet in pet_shop_info["pets"]:
+#         if pet[] == name:
+#             pet_shop_info["pets"].remove(pet)
+
+
+
+
+    # x = 0
+    # pet_deletion = pet_shop_info["pets"][0]["name"]
+    
+    # while x < 6:    
+    #     if pet_shop_info["pets"][x]["name"] == name:
+    #         pet_shop_info["pets"].remove(pet_deletion)
+    #     x = x + 1
+    # return None
+   
+   
+   
+   
+   
+   
+   
+  
+    
+  
+
