@@ -46,18 +46,5 @@ def find_pet_by_name(pet_shop_info, name):
         if pet_shop_info["pets"][x]["name"] == name:
             return pet_shop_info["pets"][x]["name"]
         x = x + 1
-    return 0
-
-
-
-        
-
-    
-    
-
-
-
-
-
-
+    return None
 
