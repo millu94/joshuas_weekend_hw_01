@@ -42,38 +42,36 @@ def get_pets_by_breed(pet_shop_info, breed):
 #10 + #11
 def find_pet_by_name(pet_shop_info, name):
     x = 0
-    while x < 6:    
+    while x < len(pet_shop_info["pets"]):    
         if pet_shop_info["pets"][x]["name"] == name:
             return pet_shop_info["pets"][x]["name"]
         x = x + 1
     return None
 
 #12 remove pet by name
-# def remove_pet_by_name(pet_shop_info, name):
-#     #pdb.set_trace()
-#     for pet in pet_shop_info["pets"]:
-#         if pet[] == name:
-#             pet_shop_info["pets"].remove(pet)
+def remove_pet_by_name(pet_shop_info, name):
+    #pdb.set_trace()
+    for pet in pet_shop_info["pets"]:
+        if pet["name"] == name:
+            pet_shop_info["pets"].remove(pet)
 
+#13 add pet to stock
+def add_pet_to_stock(pet_shop_info, add_pet):
+    pet_shop_info["pets"].append(add_pet)
 
+#14 get customer cash
+def get_customer_cash(customer_list):
+    return customer_list["cash"]
 
+#15 remove customer cash
+def remove_customer_cash(customers, cash_remove):
+    customers["cash"] -= cash_remove
+    return customers["cash"]
 
-    # x = 0
-    # pet_deletion = pet_shop_info["pets"][0]["name"]
-    
-    # while x < 6:    
-    #     if pet_shop_info["pets"][x]["name"] == name:
-    #         pet_shop_info["pets"].remove(pet_deletion)
-    #     x = x + 1
-    # return None
-   
-   
-   
-   
-   
-   
-   
-  
-    
-  
+#16 get customer pet_count
+def get_customer_pet_count(customers_pets):
+    return len(customers_pets["pets"])
 
+#17 add pet to customer
+def add_pet_to_customer(customers_pets, add_pet):
+    customers_pets["pets"].append(add_pet)
